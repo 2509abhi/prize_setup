@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-image: url(images/bg-pattern.svg);
+      text-align: center;
+    }
+    p{
+      color: hsl(222, 13%, 69%);
+    }
+    a{
+      text-decoration-line: none;
+    }
+    #body{
+      
+      background-color: #fff;
+      width: 400px;
+      border-radius: 30px;
+      padding: 3rem;
+      margin-left: 25rem;
+      margin-top: 5rem;
+    }
+    .m{
+      margin-left: 7rem;
+    }
+    .slider{
+      color: hsl(174, 86%, 45%);
+      width: 250px;
+    }
+    .sl{
+      position: relative;
+      left: 9rem;
+    }
+    .circle{
+      position: absolute;
+    }
+    .flex{
+      display: flex;
+    }
+    .left{
+      text-align: left;
+    }
+    .btn{
+      background-color: hsl(227, 35%, 25%);
+      color: hsl(174, 77%, 80%);
+      border-radius: 30px;
+      padding: 1rem;
+      position: relative;
+      top: 3rem;
+      left: 8rem;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="top">
+  <img class="circle" src="images/pattern-circles.svg" alt="circles">
+  <h1>Simple, traffic-based pricing</h1>
+  <p>Sign-up for our 30-day trial. No credit card required.</p>
+</div>
+  <main id="body">
+    <div class="flex">
+      <div class="flex"><p>100k</p><p>Pageviews</p></div>
+      <div class="flex m"><h1>$16.00</h1><p>/month</p></div>
+    </div>
+    <input type="range" min="1" max="100" value="50" class="slider" placeholder="a">
+    <p>Monthly Billing<input type="checkbox" placeholder="a">Yearly Billing <g>25% discount</g></p>
+    
+    <div class="flex">
+      <div class="left">
+        <p><img src="images/icon-check.svg" alt="check"> Unlimited websites</p>
+        <p><img src="images/icon-check.svg" alt="check"> 100% data ownership</p>
+        <p><img src="images/icon-check.svg" alt="check"> Email reports</p>
+      </div>
+      <div>
+        <a class="btn" href="#">Start my trial</a>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Abhishek Bansal</a>.</p>
+  </div>
+</body>
+</html>
